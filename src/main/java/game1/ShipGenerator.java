@@ -3,8 +3,8 @@ package game1;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
-@Service
-// TODO сделать сервисом и заинжектить в GameService
+
+@Service // TODO сделать сервисом и заинжектить в GameService
 class ShipGenerator {
 
     public HashSet<Integer> generate() {
