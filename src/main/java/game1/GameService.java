@@ -1,7 +1,6 @@
 package game1;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashSet;
 
@@ -30,6 +29,7 @@ public class GameService {
 
         i++;
         num = moveDTO.number;
+
         if (set.contains(num)) {
             set.remove(num);
             if (set.isEmpty()) {

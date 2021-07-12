@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 
-@Service // TODO сделать сервисом и заинжектить в GameService
+@Service
 class ShipGenerator {
 
     public HashSet<Integer> generate() {
@@ -12,7 +12,7 @@ class ShipGenerator {
         HashSet<Integer> set = new HashSet<>();
 
         pole = (int) (Math.random() * 10);
-        if (pole >= 9) { // TODO чё за костыль мб сразу в диапозоне генерировать?
+        if (pole >= 9) {
             pole--;
         }
         set.add(pole);
